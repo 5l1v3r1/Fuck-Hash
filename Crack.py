@@ -108,14 +108,6 @@ def get_hash(data,id="None"):
         return hashlib.sha384(str(data).encode('utf-8')).hexdigest()
     elif id == "md5":
         return hashlib.md5(str(data).encode('utf-8')).hexdigest()
-    elif id == "None":
-        sha1 = hashlib.sha1(str(data).encode('utf-8')).hexdigest()
-        sha224 = hashlib.sha224(str(data).encode('utf-8')).hexdigest()
-        sha256 = hashlib.sha256(str(data).encode('utf-8')).hexdigest()
-        sha384 = hashlib.sha384(str(data).encode('utf-8')).hexdigest()
-        sha512 = hashlib.sha512(str(data).encode('utf-8')).hexdigest()
-        md5 = hashlib.md5(str(data).encode('utf-8')).hexdigest()
-        return[md5,sha1,sha224,sha256,sha384,sha512]
     else:
         return "None"
 
