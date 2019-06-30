@@ -1,0 +1,2 @@
+# Fuck-Hash
+Hash Decryption 
