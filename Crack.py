@@ -13,8 +13,6 @@ parser.add_argument('-i', help='identify Hash Type', dest='identify')
 
 args = parser.parse_args()
 
-
-
 clear = ""
 if "Windows" in platform.system():
 	clear = "cls"
@@ -131,7 +129,7 @@ def get_hash_id(hash):
 def Crack(hash,id,list):
     if id is "None":
         return "None"
-    data_ = open(list).read().split()
+    data_ = open(list, encoding = "ISO-8859-1").read().split()
     for data in data_:
         hash_data = get_hash(data,id)
         if hash_data == hash:
