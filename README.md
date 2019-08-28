@@ -12,7 +12,7 @@
 ### Install
 ```
 git clone https://github.com/X-Vector/Fuck-Hash.git
-pip3 -r install requirments.txt
+pip3 install -r requirments.txt
 ```
 
 ### Usage
